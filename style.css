@@ -1,0 +1,364 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* body{
+    overflow-x: hidden;
+} */
+/* @media only screen and (max-width:480px){
+    body{
+        background-color: red;
+    }
+} */
+html {
+    scroll-behavior: smooth;
+}
+.home_section{
+    padding-top: 21px;
+}
+.about_section{
+    padding-top: 32px;
+}
+.projects_section{
+    padding-top: 100px;
+}
+body::-webkit-scrollbar { 
+    display: none;  /* For Chrome, Safari, and Opera */
+}
+body{
+    color: #630B0B;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 100 ;
+    font-style: normal;
+
+}
+.header_link{
+    text-decoration: none;
+    color: inherit;
+}
+.header_link:hover{
+    border: 1px solid #630B0B;
+}
+header{
+    width: 1366px;
+    height: 75px;
+    font-family: "Cedarville Cursive", cursive;
+  font-weight: 600;
+  font-style: normal;
+  font-size: medium;
+    background-color: #E0A96D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 1000;
+    font-size:x-large;
+    position: sticky;
+    z-index: 3;
+    top: 0;
+}
+li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    column-gap: 80px;
+}
+#home{
+    width: 1366px;
+    height: 460px;
+    background-color: #DDC3A5;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+.container{
+    position: relative;
+}
+.image{
+    border-radius: 500px;
+    object-fit: cover;
+    object-position: top center;
+    position: absolute;
+    z-index: 1;
+    top: 80px;
+    left: 180px;
+    background-color: #E0A96D;
+}
+.rumana{
+    font-family: "Cedarville Cursive", cursive;
+  font-weight: 600;
+  font-style: normal;
+  font-size: xxx-large;
+}
+.hello{
+    font-size: xx-large;
+    font-weight: 600;
+}
+.c1 {
+    position: absolute;
+    z-index: 2;
+    top: 80px;
+    left: 180px;
+    animation: circle 2s ease-in-out 0.1s infinite;
+}
+@keyframes circle {
+    0%{
+        top: 80px;
+        left:180px;
+    }
+    20%{
+        top: 85px;
+        left:185px;
+    }
+    40%{
+        top: 75px;
+        left:175px;
+    }
+    60%{
+        top: 65px;
+        left:180px;
+    }
+    80%{
+        top: 70px;
+        left:180px;
+    }
+    100%{
+        top: 80px;
+        left:180px;
+    }
+}
+.c2{
+    position: absolute;
+    z-index: 2;
+    top: 75px;
+    left: 170px;
+    animation: circle2 2s ease-in-out 0.1s infinite;
+}
+@keyframes circle2 {
+    0%{
+        top: 75px;
+        left:170px;
+    }
+    35%{
+        top: 65px;
+        left:180px;
+    }
+    70%{
+        top: 90px;
+        left:175px;
+    }
+    100%{
+        top: 70px;
+        left:170px;
+    }
+    100%{
+        top: 80px;
+        left:180px;
+    }
+}
+.dash{
+    position: absolute;
+    z-index: 2;
+    top: 230px;
+    left: 395px;
+    animation: dash 2.5s ease-in-out 0.1s infinite ;
+}
+@keyframes dash {
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(30deg);
+    }
+    
+}
+.spark{
+    position: absolute;
+    z-index: 2;
+    top: 98px;
+    left: 185px;
+    animation: spark 0.75s ease-in-out 0.1s infinite ;
+}
+.spark2{
+    position: absolute;
+    z-index: 2;
+    top: 140px;
+    left: 155px;
+    animation: spark 1.5s ease-in-out 0.1s infinite ;
+}
+@keyframes spark {
+    from{
+        transform: scale(100%);
+    }
+    to{
+        transform: scale(90%);
+    }
+}
+
+.home_content{
+    width: 750px;
+    position: relative;
+    left: 520px;
+    top: 110px;
+}
+
+.name{
+    text-align: justify;
+}
+button{
+    background-color:#E0A96D;
+    border: 2px solid #630B0B;
+    position: relative;
+    left: 210px;
+    color: #630B0B;
+    height: 30px;
+    width: 150px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+}
+button:hover{
+    stroke-width:3;
+    font-weight: bold;
+}
+.no_underline{
+    text-decoration: none;
+}
+#about{
+    width: 1366px;
+    height: 500px;
+    background-image:url("about_img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about{
+    position: relative;
+    top: 60px;
+    left: 40px;
+}
+.para{
+    width: 1100px;
+    height: 80px;
+    text-align: justify;
+    position: relative;
+    left: 40px;
+}
+#projects{
+    width: 1323px;
+    height: 900px;
+    position: relative;
+    left: 42px;
+}
+.project1{
+    height: 300px;
+    width: 950px;
+    position: relative;
+    left: 80px;
+    display:flex;
+}
+.container_project{
+    position: relative;
+}
+.box{
+    width: 500px;
+    height: 300px;
+    background-color: #DDC3A5;
+    position: absolute;
+    z-index: 1;
+    left: 600px;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+} 
+.overlap_img{
+    position: absolute;
+    z-index: 2;
+    left: 625px;
+}
+
+.project1_content{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    right: 400px;
+}
+.project_para{
+    text-align: justify;
+    width: 500px;
+    height: auto;
+}
+
+.project2{
+    height: 300px;
+    width: 950px;
+    position: relative;
+    left: 80px;
+    display:flex;
+}
+.container_project2{
+    position: relative;
+}
+.box2{
+    width: 500px;
+    height: 300px;
+    background-color: #DDC3A5;
+    position: absolute;
+    z-index: 1;
+    left: 50px;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+} 
+.overlap_img2{
+    position: absolute;
+    z-index: 2;
+    left: 73px;
+}
+
+.project2_content{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    left: 600px;
+}
+.project_para2{
+    text-align: justify;
+    width: 500px;
+    height: auto;
+}
+
+
+.git_pos{
+    position: relative;
+    left: 3px;
+    color: inherit;
+    text-decoration: none;
+}
+.github_link{
+    color: inherit;
+    text-decoration: none;
+}
+.contact{
+    height: 220px;
+    width: 1366px;
+    font-family: "Cedarville Cursive", cursive;
+  font-weight: 600;
+  font-style: normal;
+  font-size: small;
+    background-color: #e0a96d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot_svg1:hover{
+    border: 1px solid #630B0B;
+}
+.foot_svg2:hover{
+    border: 1px solid #630B0B;
+}
+.foot_svg3:hover{
+    border: 1px solid #630B0B;
+}
